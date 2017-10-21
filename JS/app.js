@@ -12,6 +12,7 @@ document.addEventListener('DOMContentLoaded', function() {
     dropdownList.style.display = 'none';
   });
     
+    //zadanie 2
       var buttons = document.querySelectorAll('.read-more');
     
     function showHide() {
@@ -28,4 +29,10 @@ document.addEventListener('DOMContentLoaded', function() {
     for (var i = 0; i < buttons.length; i++) {
     buttons[i].addEventListener('click', showHide);
     }
+    
+    //zadanie 3
+    var navigation = document.querySelector('nav.navbar');
+    window.addEventListener('scroll', function() {
+    navigation.style.borderBottom = '2px solid #7f7f7f'
+    })
 }); 
